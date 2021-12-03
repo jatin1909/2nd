@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	text-transform: capitalize;
+	text-decoration: none;
+	box-sizing: border-box;		
+}
+
+section{
+	padding: 10px 9%;
+	padding-top: 120px;
+}
+
+.heading{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.heading span{
+	font-size: 35px;
+    color: green;
+}
+
+.heading  h1{
+	font-size: 22px;
+	color: black;
+}
+
+.heading h1:hover{
+	color: purple;
+	text-decoration: underline;
+}
+
+.btn{
+	 display: inline-block;
+	 padding:7px 20px;
+     margin top:19px;
+     font-size: 18px;
+     color: white;
+     background: black;  
+     border: 1px solid black;
+     cursor: pointer;
+     border-radius:6px;
+}
+
+.btn:hover{
+	background: white;
+	color: black;
+}
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0; right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: white;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+	padding: 10px 9%;
+}
+
+.header .logo{
+   font-size: 25px;
+   color: green;
+}
+
+.navbar a{
+	padding: 14px;
+	font-size: 18px;
+	color: black;
+}	
+
+.navbar a:hover{
+	text-decoration: underline;
+	color: green;
+}
+
+header input{
+	display: none;
+}
+
+header label{
+	font-size: 25px;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.home{
+	display: flex;
+	flex-wrap: wrap;
+	gap:40px;
+	background: pink;
+	align-items: center;
+}
+
+.home .image{
+	flex: 1 1 40px;
+	margin-top: 20px;
+}
+
+.home .image img{
+	width: 100%;
+}
+
+.home .content{
+	flex: 1 1 40px;
+}
+
+.home .content h3{
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.home .content h3 span{
+	color: green;
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+.home .content p{
+	line-height: 2;
+	font-size: 17px;
+	padding: 15px 0;
+}
+
+.services{
+	background: pink;
+    padding-bottom: 70px;
+
+}
+.services .box-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:10px;
+	align-items: center;
+	text-align: center;
+}
+
+.services .box-container .box{
+	background: white;
+	flex: 1 1 30%;
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+
+.services .box-container .box img{
+	width: 20%;
+}
+
+.services .box-container .box h3{
+	font-size: 20px;
+	font-weight: 700px;
+	padding: 12px 0;
+}
+
+.services .box-container .box p{
+	line-height: 1.3;
+	font-size: 15px;
+}
+
+
+.about{
+	display: flex;
+	align-items: center;
+    text-align: center;
+
+}
+
+.about .image {
+	flex: 1 1 40px;
+}
+
+.about img{
+	width: 100%;
+}
+
+.about .content{
+	flex: 1 1 40px
+}
+
+.about .content h3{
+	font-size: 30px;
+}
+
+.about .content span{
+	font-size: 40px;
+	color: green;
+}
+
+.about .content p{
+	font-size: 17px;
+	line-height: 2;
+	color: #333;
+	padding-bottom: 20px;	
+}
+
+
+.steps{
+	background: lightblue;
+	text-align: center;
+}
+
+.steps .box-container{
+	display: flex;
+	gap:10px;
+}
+
+.steps .box-container  .box{
+	flex:  1 1 30%;
+}
+
+.steps .box-container .box img{
+	flex: 1 1 30%;
+	width: 80%;
+}
+
+.steps .box-container .box h3{
+	font-size: 25px;
+	color: #666;
+	padding: 10px 0;
+}
+
+.steps .box-container .box a{
+	margin-top: 10px;
+}
+
+.footer{
+   background: black;
+}
+
+
+.footer .box-container{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+	background: black;
+}
+
+.footer .box-container .box h3{
+	font-size: 25px;
+	color: green;
+	font-weight: bolder;
+}
+
+.footer .box-container .box a{
+   display: block;
+   margin: 10px;
+   color: white;
+   font-size: 19px;
+   font-weight: bolder;
+}
+
+.footer .box-container .box a:hover{
+	color: green;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+	.header{
+		padding: 20px;
+	}
+
+	.services .box-container .box img{
+		width: 30%;
+	}
+
+	
+}
+
+@media (max-width: 768px){
+	header label{
+		visibility: visible;
+		opacity: 1;
+	}
+	.btn{
+		display: none;
+	}
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: white;
+		padding:1rem 2rem;
+        border-top: 2px solid rgba(0,0,0,.1);
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2); 
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+
+	}
+
+
+	header .navbar a{
+		display: block;
+		margin: 15px 0; 
+		font-size: 22px;
+	}
+
+	header input:checked ~ .navbar{
+		transform: scaleY(1);
+		opacity: 1;
+	}
+
+	.home{
+		flex-flow: column;
+	}
+
+    .services .box-container{
+	  flex-flow: column;
+	  }
+
+	  .about{
+	  	flex-flow: column;
+	  }
+
+	  .steps .box-container{
+	  	flex-flow: column;
+	  }
+	  .steps .box-container .box img{
+	  	width: 40%;
+	  }
+
+	  .footer .box-container{
+	  	flex-flow: column;
+	  	gap:50px;
+	  }
+}   
